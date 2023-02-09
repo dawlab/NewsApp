@@ -17,6 +17,7 @@
 		BD005C7F2993ADF2008E0962 /* ArticleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD005C7E2993ADF2008E0962 /* ArticleList.swift */; };
 		BD005C822993B68F008E0962 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD005C812993B68F008E0962 /* ArticleViewModel.swift */; };
 		BD005C852993C2C9008E0962 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD005C842993C2C9008E0962 /* ArticleTableViewCell.swift */; };
+		BD005C8D2995966E008E0962 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD005C8C2995966E008E0962 /* Categories.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		BD005C7E2993ADF2008E0962 /* ArticleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleList.swift; sourceTree = "<group>"; };
 		BD005C812993B68F008E0962 /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
 		BD005C842993C2C9008E0962 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		BD005C8C2995966E008E0962 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				BD005C7E2993ADF2008E0962 /* ArticleList.swift */,
+				BD005C8C2995966E008E0962 /* Categories.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD005C612993878D008E0962 /* AppDelegate.swift in Sources */,
+				BD005C8D2995966E008E0962 /* Categories.swift in Sources */,
 				BD005C792993A859008E0962 /* NewsListTableViewController.swift in Sources */,
 				BD005C7C2993AA16008E0962 /* WebService.swift in Sources */,
 				BD005C822993B68F008E0962 /* ArticleViewModel.swift in Sources */,
