@@ -41,7 +41,12 @@ extension ArticleViewModel {
     var title: String {
         return self.article.title ?? "No information"
     }
+    
     var description: String {
         return self.article.description ?? "No information"
+    }
+    
+    var urlString: String {
+        return self.article.url ?? ""
     }
 }
