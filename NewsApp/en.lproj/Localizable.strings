@@ -1,0 +1,14 @@
+"CategoryKey" = "Category";
+"RightButtonIcon" = "ellipsis.circle";
+"SelectCategory" = "Select your category";
+"TopNewsCategory" = "Top news";
+"TopNewsCategoryIcon" = "list.star";
+"AppleCategory" = "Apple";
+"AppleCategoryIcon" = "apple.logo";
+"TeslaCategory" = "Tesla";
+"TeslaCategoryIcon" = "bolt.car";
+"AICategory" = "AI";
+"AICategoryIcon" = "brain";
+"CryptoCategory" = "Crypto";
+"CryptoCategoryIcon" = "chart.line.uptrend.xyaxis";
+

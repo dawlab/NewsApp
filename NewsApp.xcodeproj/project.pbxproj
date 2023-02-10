@@ -18,6 +18,9 @@
 		BD005C822993B68F008E0962 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD005C812993B68F008E0962 /* ArticleViewModel.swift */; };
 		BD005C852993C2C9008E0962 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD005C842993C2C9008E0962 /* ArticleTableViewCell.swift */; };
 		BD005C8D2995966E008E0962 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD005C8C2995966E008E0962 /* Categories.swift */; };
+		BD005C97299622A8008E0962 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BD005C99299622A8008E0962 /* Localizable.strings */; };
+		BD005C9B29962970008E0962 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD005C9A29962970008E0962 /* Strings+Generated.swift */; };
+		BD005C9E29962C5D008E0962 /* L10n-swift in Frameworks */ = {isa = PBXBuildFile; productRef = BD005C9D29962C5D008E0962 /* L10n-swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,8 @@
 		BD005C812993B68F008E0962 /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
 		BD005C842993C2C9008E0962 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		BD005C8C2995966E008E0962 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		BD005C98299622A8008E0962 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BD005C9A29962970008E0962 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD005C9E29962C5D008E0962 /* L10n-swift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +83,8 @@
 				BD005C692993878F008E0962 /* Assets.xcassets */,
 				BD005C6B2993878F008E0962 /* LaunchScreen.storyboard */,
 				BD005C6E2993878F008E0962 /* Info.plist */,
+				BD005C99299622A8008E0962 /* Localizable.strings */,
+				BD005C9A29962970008E0962 /* Strings+Generated.swift */,
 			);
 			path = NewsApp;
 			sourceTree = "<group>";
@@ -138,6 +146,9 @@
 			dependencies = (
 			);
 			name = NewsApp;
+			packageProductDependencies = (
+				BD005C9D29962C5D008E0962 /* L10n-swift */,
+			);
 			productName = NewsApp;
 			productReference = BD005C5D2993878D008E0962 /* NewsApp.app */;
 			productType = "com.apple.product-type.application";
@@ -166,6 +177,9 @@
 				Base,
 			);
 			mainGroup = BD005C542993878D008E0962;
+			packageReferences = (
+				BD005C9C29962C5D008E0962 /* XCRemoteSwiftPackageReference "L10n-swift" */,
+			);
 			productRefGroup = BD005C5E2993878D008E0962 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -181,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD005C6D2993878F008E0962 /* LaunchScreen.storyboard in Resources */,
+				BD005C97299622A8008E0962 /* Localizable.strings in Resources */,
 				BD005C6A2993878F008E0962 /* Assets.xcassets in Resources */,
 				BD005C682993878D008E0962 /* Main.storyboard in Resources */,
 			);
@@ -195,6 +210,7 @@
 			files = (
 				BD005C612993878D008E0962 /* AppDelegate.swift in Sources */,
 				BD005C8D2995966E008E0962 /* Categories.swift in Sources */,
+				BD005C9B29962970008E0962 /* Strings+Generated.swift in Sources */,
 				BD005C792993A859008E0962 /* NewsListTableViewController.swift in Sources */,
 				BD005C7C2993AA16008E0962 /* WebService.swift in Sources */,
 				BD005C822993B68F008E0962 /* ArticleViewModel.swift in Sources */,
@@ -221,6 +237,14 @@
 				BD005C6C2993878F008E0962 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BD005C99299622A8008E0962 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD005C98299622A8008E0962 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -420,6 +444,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BD005C9C29962C5D008E0962 /* XCRemoteSwiftPackageReference "L10n-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Decybel07/L10n-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BD005C9D29962C5D008E0962 /* L10n-swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD005C9C29962C5D008E0962 /* XCRemoteSwiftPackageReference "L10n-swift" */;
+			productName = "L10n-swift";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BD005C552993878D008E0962 /* Project object */;
 }

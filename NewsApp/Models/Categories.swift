@@ -8,7 +8,7 @@
 import Foundation
 
 struct Categories {
-    let urlString = "https://newsapi.org/v2/everything?q=apple&from=2023-02-07&to=2023-02-07&sortBy=popularity&language=pl&apiKey=d30b951a4e3c40fa930355f474fbe37b"
+    let urlString = Category.topNews.rawValue
 }
 
 enum Category: String {

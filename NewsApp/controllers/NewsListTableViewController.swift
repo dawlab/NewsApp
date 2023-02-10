@@ -11,7 +11,7 @@ class NewsListTableViewController: UITableViewController {
     var url: URL!
     let selectCategoryButton = UIButton(type: .system)
     let defaults = UserDefaults.standard
-    var urlString = UserDefaults.standard.string(forKey: "Category") ?? Categories().urlString
+    var urlString = UserDefaults.standard.string(forKey: L10n.categoryKey) ?? Categories().urlString
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +39,7 @@ class NewsListTableViewController: UITableViewController {
         
         navigationBar.addSubview(selectCategoryButton)
         selectCategoryButton.tintColor = .white
-        selectCategoryButton.setImage(UIImage(systemName: "ellipsis.circle"), for: .normal)
+        selectCategoryButton.setImage(UIImage(systemName: L10n.rightButtonIcon), for: .normal)
         selectCategoryButton.showsMenuAsPrimaryAction = true
         selectCategoryButton.menu = menu
         
@@ -63,31 +63,31 @@ class NewsListTableViewController: UITableViewController {
         aiCategory,
         cryptoCategory]
     
-    private lazy var menu = UIMenu(title: "Select your category", children: elements)
+    private lazy var menu = UIMenu(title: L10n.selectCategory, children: elements)
     
     func changeNewsSource(from category: Category) {
         urlString = category.rawValue
-        defaults.set(self.urlString, forKey: "Category")
+        defaults.set(self.urlString, forKey: L10n.categoryKey)
         setupWebService(urlString: self.urlString)
     }
     
-    private lazy var topNewsCategory = UIAction(title: "Top news", image: UIImage(systemName: "list.star"), attributes: [], state: .off) { action in
+    private lazy var topNewsCategory = UIAction(title: L10n.topNewsCategory, image: UIImage(systemName: L10n.topNewsCategoryIcon), attributes: [], state: .off) { action in
         self.changeNewsSource(from: Category.topNews)
     }
     
-    private lazy var appleCategory = UIAction(title: "Apple", image: UIImage(systemName: "apple.logo"), attributes: [], state: .off) { action in
+    private lazy var appleCategory = UIAction(title: L10n.appleCategory, image: UIImage(systemName: L10n.appleCategoryIcon), attributes: [], state: .off) { action in
         self.changeNewsSource(from: Category.apple)
     }
     
-    private lazy var teslaCategory = UIAction(title: "Tesla", image: UIImage(systemName: "bolt.car"), attributes: [], state: .off) { action in
+    private lazy var teslaCategory = UIAction(title: L10n.teslaCategory, image: UIImage(systemName: L10n.teslaCategoryIcon), attributes: [], state: .off) { action in
         self.changeNewsSource(from: Category.tesla)
     }
     
-    private lazy var aiCategory = UIAction(title: "AI", image: UIImage(systemName: "brain"), attributes: [], state: .off) { action in
+    private lazy var aiCategory = UIAction(title: L10n.aiCategory, image: UIImage(systemName: L10n.aiCategoryIcon), attributes: [], state: .off) { action in
         self.changeNewsSource(from: Category.ai)
     }
     
-    private lazy var cryptoCategory = UIAction(title: "Crypto", image: UIImage(systemName: "chart.line.uptrend.xyaxis"), attributes: [], state: .off) { action in
+    private lazy var cryptoCategory = UIAction(title: L10n.cryptoCategory, image: UIImage(systemName: L10n.cryptoCategoryIcon), attributes: [], state: .off) { action in
         self.changeNewsSource(from: Category.crypto)
     }
     
